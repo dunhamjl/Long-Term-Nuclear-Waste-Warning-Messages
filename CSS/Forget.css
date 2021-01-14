@@ -1,0 +1,60 @@
+body {
+    background-image: url(../images/ForgetBackground.png);
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color: white;
+    background-position: 0px 0px;
+    height: 100%;
+}
+
+.header {
+    z-index: 1;
+}
+
+.header:not(:hover) {
+    transform: translatey(-100%);
+    transition: 2s ease-in-out;
+}
+
+.header:hover {
+    transform: translatey(0%);
+    transition: 2s ease-in-out;
+}
+
+.part1 {
+    width: 100%;
+    text-align: center;
+    font-size: 4vmin;
+    z-index: 10;
+}
+
+.part2 {
+    width: 100%;
+    text-align: center;
+    font-size: 8vmin;
+    color: transparent;
+    transition: 2s ease-in-out;
+    height: 100%;
+}
+
+@media only screen and (max-width: 380px) {
+    .part2 {
+        color: white;
+    }
+}
+
+.part2:hover {
+    color: white;
+    transition: 2s ease-in-out;
+}
+
+.part3 {
+    width: 100%;
+    text-align: center;
+    font-size: 5vmin;
+    color: white;
+    transition: 2s ease-in-out;
+    height: 100%;
+}
