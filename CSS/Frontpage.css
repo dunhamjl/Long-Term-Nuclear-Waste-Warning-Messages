@@ -137,7 +137,7 @@ ul button {
     width: 200%;
     transition: 1s ease-in-out;
     z-index: 1;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .dropdown-content a {
@@ -689,11 +689,13 @@ a {
     width: 100%;
     position: fixed;
     top: 100%;
+    pointer-events: none;
 }
 
 .rubble img {
     width: 100%;
-    transform: translatey(-70%)
+    transform: translatey(-70%);
+    pointer-events: none;
 }
 
 .Fauxcity {
@@ -701,11 +703,13 @@ a {
     width: 100%;
     position: fixed;
     top: 100%;
+    pointer-events: none;
 }
 
 .Fauxcity img {
     width: 100%;
-    transform: translatey(-80%)
+    transform: translatey(-80%);
+    pointer-events: none;
 }
 
 /*@media only screen and (min-width: 1000px) {
