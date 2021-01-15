@@ -8,6 +8,12 @@ body {
     background-attachment: fixed;
 }
 
+body.preload * {
+    animation-duration: .0s !important;
+    -webkit-animation-duration: 0s !important;
+    transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+}
+
 a:visited {
     color: white;
 }
@@ -129,17 +135,17 @@ ul button {
     padding-right: 10%;
     left: -60%;
     width: 200%;
-    z-index: 1;
     transition: 1s ease-in-out;
+    z-index: 1;
     z-index: 100;
 }
 
 .dropdown-content a {
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
     color: transparent;
     z-index: 100;
+    display: block;
 }
 
 @keyframes appear {
