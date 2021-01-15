@@ -760,3 +760,9 @@ iframe {
         height: 100px;
     }
 }
+
+@media only screen and (max-device-width: 1024px) {
+    button li a {
+        font-size: 14px;
+    }
+}
